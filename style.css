@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #000;
-    color: #fff;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text for readability */
     margin: 0;
     padding: 0;
 }
@@ -11,7 +11,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #111;
+    background-color: #1a1a1a; /* Dark gray for a subtle contrast */
     position: fixed;
     width: 100%;
     top: 0;
@@ -21,6 +21,7 @@ header {
 header .logo {
     font-size: 24px;
     font-weight: bold;
+    color: #9b59b6; /* Purple logo text */
 }
 
 header nav ul {
@@ -35,17 +36,17 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: #fff;
+    color: #9b59b6; /* Purple for links */
     text-decoration: none;
     transition: color 0.3s;
 }
 
 header nav ul li a:hover {
-    color: #9b59b6;
+    color: #fff; /* White on hover for contrast */
 }
 
 header .cta a {
-    background-color: #9b59b6;
+    background-color: #9b59b6; /* Purple background for CTA */
     color: #fff;
     padding: 10px 20px;
     text-decoration: none;
@@ -54,7 +55,7 @@ header .cta a {
 }
 
 header .cta a:hover {
-    background-color: #8e44ad;
+    background-color: #8e44ad; /* Darker purple on hover */
 }
 
 .hero {
@@ -84,19 +85,21 @@ header .cta a:hover {
 
 .about, .testimonials, .booking {
     padding: 50px 20px;
-    background-color: #111;
+    background-color: #1a1a1a; /* Dark gray background */
+    color: #fff; /* White text */
     text-align: center;
 }
 
 .about h2, .testimonials h2, .booking h2 {
-    color: #9b59b6;
+    color: #9b59b6; /* Purple for section headers */
 }
 
 footer {
     padding: 20px;
-    background-color: #111;
+    background-color: #1a1a1a; /* Consistent dark gray background */
     display: flex;
     justify-content: space-between;
+    color: #fff;
 }
 
 footer .contact, footer .social {
@@ -105,7 +108,11 @@ footer .contact, footer .social {
 }
 
 footer .social a {
-    color: #9b59b6;
+    color: #9b59b6; /* Purple links in footer */
     text-decoration: none;
     margin-top: 10px;
+}
+
+footer .social a:hover {
+    color: #fff; /* White on hover */
 }
