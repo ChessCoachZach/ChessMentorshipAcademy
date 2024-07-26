@@ -8,18 +8,25 @@
 </head>
 <body>
     <header>
-        <div class="logo">Your Logo</div>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#lessons">Lessons</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="cta">
-            <a href="#book">Book a Lesson</a>
+        <div class="container">
+            <div class="logo">Your Logo</div>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#lessons">Lessons</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="cta">
+                <a href="#book" class="btn">Book a Lesson</a>
+            </div>
+            <div class="menu-toggle" aria-label="Menu Toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </header>
 
@@ -35,43 +42,60 @@
     </section>
 
     <section id="about" class="about">
-        <h2>Why Chess?</h2>
-        <p>Benjamin Franklin wrote in 1779 that the game of chess “is not merely an idle amusement...”</p>
-        <p>Today, educators and parents have discovered that chess is a wonderful way to teach young children...</p>
-        <!-- Additional content here -->
+        <div class="container">
+            <h2>Why Chess?</h2>
+            <p>Benjamin Franklin wrote in 1779 that the game of chess “is not merely an idle amusement...”</p>
+            <p>Today, educators and parents have discovered that chess is a wonderful way to teach young children...</p>
+            <!-- Additional content here -->
+        </div>
     </section>
 
     <section id="testimonials" class="testimonials">
-        <h2>Testimonials</h2>
-        <div class="testimonial">
-            <p>"My child's concentration and problem-solving skills have improved tremendously!" - Parent</p>
+        <div class="container">
+            <h2>Testimonials</h2>
+            <div class="testimonial">
+                <p>"My child's concentration and problem-solving skills have improved tremendously!" - Parent</p>
+            </div>
+            <!-- Additional testimonials here -->
         </div>
-        <!-- Additional testimonials here -->
     </section>
 
     <section id="book" class="booking">
-        <h2>Book a Lesson</h2>
-        <form>
-            <input type="text" placeholder="Name" required>
-            <input type="email" placeholder="Email" required>
-            <input type="text" placeholder="Phone Number" required>
-            <input type="text" placeholder="Location (Kingwood, Texas)" required>
-            <textarea placeholder="Message" required></textarea>
-            <button type="submit">Submit</button>
-        </form>
+        <div class="container">
+            <h2>Book a Lesson</h2>
+            <form>
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="text" placeholder="Phone Number" required>
+                <input type="text" placeholder="Location (Kingwood, Texas)" required>
+                <textarea placeholder="Message" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
     </section>
 
     <footer>
-        <div class="contact">
-            <p>Email: info@yourchessbusiness.com</p>
-            <p>Phone: (123) 456-7890</p>
-            <p>Location: Kingwood, Texas</p>
-        </div>
-        <div class="social">
-            <a href="#">YouTube</a>
-            <a href="#">Facebook</a>
-            <!-- Additional social links -->
+        <div class="container">
+            <div class="contact">
+                <p>Email: <a href="mailto:info@yourchessbusiness.com">info@yourchessbusiness.com</a></p>
+                <p>Phone: <a href="tel:1234567890">(123) 456-7890</a></p>
+                <p>Location: Kingwood, Texas</p>
+            </div>
+            <div class="social">
+                <a href="#">YouTube</a>
+                <a href="#">Facebook</a>
+                <!-- Additional social links -->
+            </div>
         </div>
     </footer>
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navList = document.querySelector('.nav-list');
+
+        menuToggle.addEventListener('click', () => {
+            navList.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
